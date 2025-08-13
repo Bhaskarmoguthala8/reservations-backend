@@ -65,7 +65,7 @@ FRONTEND_ORIGINS = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "https://theramblinghouse.ie",
-    "https://frontend-phi-gold-23.vercel.app/",
+    "https://frontend-phi-gold-23.vercel.app",
     "https://www.theramblinghouse.ie"
 ]
 
