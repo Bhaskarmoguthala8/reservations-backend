@@ -65,6 +65,7 @@ FRONTEND_ORIGINS = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "https://theramblinghouse.ie",
+    "https://frontend-k653.vercel.app/",
     "https://www.theramblinghouse.ie"
 ]
 
@@ -167,7 +168,7 @@ async def login(request: Request, payload: LoginRequest, response: Response):
             key="auth_token",
             value=res.session.access_token,
             httponly=True,
-            secure=False,  # Set to True in production with HTTPS
+            secure=True,  # Set to True in production with HTTPS
             samesite="lax",
             max_age=3600,  # 1 hour
             domain=None  # Allow cookie to work on localhost and 127.0.0.1
